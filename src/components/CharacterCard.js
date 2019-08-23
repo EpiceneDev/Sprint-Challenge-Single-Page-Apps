@@ -7,7 +7,7 @@ export default function CharacterCard(props) {
 
   return (
     <Card>
-      <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
+      <Image src={character.image} wrapped ui={false} />
       
       <Card.Content>
         <Card.Header>{character.name}</Card.Header>

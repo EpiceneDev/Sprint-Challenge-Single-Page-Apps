@@ -25,14 +25,14 @@ export default function LocationsList() {
   }, []);
 
   return (
-    <section className="character-list grid-view">
-      {locations.map(location => ( 
-        <Link to = './location/:id'>
-          <LocationCard key = { location.id } location = { location } id = { location.id }/> 
-        </Link >
-      )
-      )
-      } 
-    </section>
+    <Link to = { `/location/${locations.id}` } >
+      <section className="character-list grid-view">
+        {locations.map(location => ( 
+            <LocationCard key = { location.id } location = { location } id = { location.id }/> 
+        )
+        )
+        } 
+      </section>
+    </Link>
   );
 }

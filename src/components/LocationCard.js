@@ -8,7 +8,7 @@ export default function LocationCard(props) {
 
   return (
     <>
-      <Link to = { `/location/${id}` } >
+      
         <Card>
           <Card.Content>
             <Card.Header>{props.location.name}</Card.Header>
@@ -29,7 +29,7 @@ export default function LocationCard(props) {
             ))}
             </Card.Content>
         </Card>
-      </Link>
+      
     </>
   )
 }

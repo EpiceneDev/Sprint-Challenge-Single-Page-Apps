@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import CharacterCard from './components/CharacterCard.js';
 import EpisodeCard from './components/EpisodeCard';
 import LocationCard from './components/LocationCard';
+import CharacterList from "./components/CharacterList.js";
 
 
 export default function App() {
@@ -11,9 +12,9 @@ export default function App() {
     <main>
       <Header />
       {/* <TabNav /> */}
-      <CharacterCard />
-      <LocationCard />
-      <EpisodeCard />
+      <CharacterList />
+      {/* <LocationCard />
+      <EpisodeCard /> */}
     </main>
   );
 }

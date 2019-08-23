@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import { Card, Icon, Image } from 'semantic-ui-react';
 
 export default function CharacterCard(props) {
@@ -21,10 +21,10 @@ export default function CharacterCard(props) {
       </Card.Content>
 
       <Card.Content extra>
-        <a>
+        <Link to="/EpisodeList">
           <Icon name='user' />
           Episodes
-        </a>
+        </Link>
       </Card.Content>
     </Card>
   )

@@ -4,8 +4,8 @@ import LocationCard from './LocationCard.js';
 
 export default function LocationsList() {
   // TODO: Add useState to track data from useEffect
-  const [locationList, setLocationList] = useState("");
-  // console.log("LocationList props: ", props);
+  const [locations, setLocations] = useState("");
+  console.log("LocationList props: ", locations);
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
@@ -13,8 +13,8 @@ export default function LocationsList() {
     
       axios.get(`https://rickandmortyapi.com/api/location`)
           .then(res => {
-            console.log("Episodes returned from api: ", res.data.results);
-            setLocationList(res.data.results);
+            console.log("Locations returned from api: ", res.data.results);
+            setLocations(res.data.results);
           })
           .catch(err => console.log("Error in obtaining Locations from API"))
     
@@ -22,9 +22,7 @@ export default function LocationsList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
-      {locationList.map(location => <LocationCard location={location} />)} 
-      {/* <LocationCard location={location} /> */}
+      {locations.map(location => <LocationCard location={location} />)} 
     </section>
   );
 }

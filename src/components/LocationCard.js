@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, Icon, Image } from 'semantic-ui-react';
 
-export default function LocationCard({ name, type, dimension, residents }) {
-
+export default function LocationCard(props) {
+  const { name, type, dimension, residents } = props;
+  
   return (
     <Card>
       <Card.Content>

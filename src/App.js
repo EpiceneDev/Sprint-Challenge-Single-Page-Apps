@@ -13,12 +13,6 @@ export default function App() {
       <Header />
       <TabNav />
       <WelcomePage />
-      {/* <CharacterList /> */}
-      {/* <LocationsList /> */}
-      {/* <EpisodeList /> */}
-      {/* <Link to = '/' >{WelcomePage}< /Link>  */}
-      <Route path = "/characters/:id"
-      render = {props => ( < CharacterList  {...props } />)} />
     </main>
   );
 }

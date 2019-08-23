@@ -1,25 +1,23 @@
 import React from "react";
 import { Card, Icon, Image } from 'semantic-ui-react';
 
-export default function CharacterCard() {
+export default function EpisodeCard(props) {
+    const { episode } = props;
   return (
     <Card>
-      <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-      
       <Card.Content>
-        <Card.Header>Daniel</Card.Header>
-        <Card.Meta>Joined in 2016</Card.Meta>
+        <Card.Header>{episode.title}</Card.Header>
+        
         <Card.Description>
-          Daniel is a comedian living in Nashville.
+          First aired: {episode.air_date}
+        </Card.Description>
+
+        <Card.Description>
+          Created: {episode.created}
         </Card.Description>
       </Card.Content>
 
-      <Card.Content extra>
-        <a>
-          <Icon name='user' />
-          10 Friends
-        </a>
-      </Card.Content>
+      
     </Card>
   )
 }

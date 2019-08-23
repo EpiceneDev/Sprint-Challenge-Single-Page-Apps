@@ -11,16 +11,19 @@ export default function CharacterCard(props) {
       
       <Card.Content>
         <Card.Header>{character.name}</Card.Header>
-        <Card.Meta>{ character.species}</Card.Meta>
+        <Card.Meta>{ character.species} {character.status}</Card.Meta>
         <Card.Description>
-          Daniel is a comedian living in Nashville.
+          Location: {character.location.name}
+        </Card.Description>
+        <Card.Description>
+          Origin: {character.origin.name}
         </Card.Description>
       </Card.Content>
 
       <Card.Content extra>
         <a>
           <Icon name='user' />
-          10 Friends
+          Episodes
         </a>
       </Card.Content>
     </Card>

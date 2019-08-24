@@ -11,7 +11,17 @@ export default function App() {
   return (
     <main>
       <Header />
-      <TabNav />
+      {/* <TabNav /> */}
+      <Link exact to='/'>Home Page</Link>
+      <Link to='/characters'>Characters</Link>
+      <Link to='/locations'>Locations</Link>
+      <Link to='/episodes'>Episodes</Link>
+      <Route path="/characters" 
+            component={CharacterList} />
+      <Route path="/locations" 
+            component={LocationsList} />
+      <Route path="/episodes" 
+            component={EpisodeList} />
       <WelcomePage />
     </main>
   );

@@ -20,12 +20,12 @@ export default function CharacterCard(props) {
         </Card.Description>
       </Card.Content>
 
-      <Card.Content extra>
+      {/* <Card.Content extra>
         <Link to="/EpisodeList">
           <Icon name='user' />
           Episodes
         </Link>
-      </Card.Content>
+      </Card.Content> */}
     </Card>
   )
 }

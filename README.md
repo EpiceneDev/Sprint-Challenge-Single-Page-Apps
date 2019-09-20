@@ -31,9 +31,9 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
     1. Client-side routing allows for only the rendering of the changed code, not the whole page when there is a change to state. 
 
-    2. Because of less processing, the routing is faster for the rendering of the views.
+    2. Because of less processing needed, the processing is faster: The routing is faster for the rendering of the views.
 
-    3. The quicker processing has enabled the buildout of smoother transitions and animations.
+    3. The quicker processing has also enabled the buildout of smoother transitions and animations.
 
 ## Project Set Up
 

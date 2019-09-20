@@ -12,7 +12,6 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
-      <SearchForm />
     </section>
   );
 }

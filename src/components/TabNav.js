@@ -12,7 +12,7 @@ import WelcomePage from "./WelcomePage";
 
 const panes = [
     { menuItem: 'Home Page', render: () => <Tab.Pane></Tab.Pane>},
-    { menuItem: 'Characters', render: () => <Tab.Pane></Tab.Pane> },
+    { menuItem: 'Characters', render: () => <Tab.Pane></Tab.Pane>},
     { menuItem: 'Locations', render: () => <Tab.Pane onTabChange>{LocationsList}</Tab.Pane> },
     { menuItem: 'Episodes', render: () => <Tab.Pane>{EpisodeList} </Tab.Pane> },
 ]
@@ -31,8 +31,8 @@ const panes = [
 //         </Segment>
 //       </div>
 //     )
-  
 // }  
+  
 const TabNav = (menuItem) => <Tab panes={panes} />
 
 export default TabNav

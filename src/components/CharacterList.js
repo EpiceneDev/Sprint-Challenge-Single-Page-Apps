@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, Route } from 'react-router-dom';
 import axios from "axios";
 import CharacterCard from './CharacterCard.js';
 
@@ -15,13 +16,21 @@ export default function CharacterList() {
             setCharacters(res.data.results);
           })
           .catch(err => console.log("Error in obtaining Characters from API", err))
+          //  Add error handling for all async (axios/AJAX) calls. (Including some styled UI.)
     
   }, []);
 
   return (
     <section className="character-list grid-view">
         {characters.map(character => {
-          return <CharacterCard key={character.id} character={character} />;
+          return (
+            <section className="character-card">
+              <Link to={`/character/${character.name}`}>
+                <CharacterCard key={character.id} character={character} />
+              </Link>
+              <Route path={`/character/${character.name}`} />
+            </section>
+          )
          })}
     </section>
   );

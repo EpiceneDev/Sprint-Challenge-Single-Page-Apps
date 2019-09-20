@@ -22,8 +22,7 @@ export default function EpisodeList() {
 
   return (
     <section className="character-list grid-view">
-      {episodes.map(episode => <EpisodeCard episode={episode} />)} 
-      {/* <EpisodeCard episode={episodeList} /> */}
+      {episodes.map(episode => <EpisodeCard episode={episode} />)}
     </section>
   );
 }
